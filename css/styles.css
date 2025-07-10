@@ -1,5 +1,117 @@
-.my-account{
-    path{
-        fill: red;
-    }
+@font-face {
+    font-family: "Muller";
+    src: local("Muller"),
+        url(../fonts/Muller-Trial-Regular.woff2) format(woff2),
+        url(../fonts/Muller-Trial-Regular.woff) format(woff);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Muller";
+    src: local("Muller"),
+        url(../fonts/Muller-Trial-Medium.woff2) format(woff2),
+        url(../fonts/Muller-Trial-Medium.woff) format(woff);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Muller";
+    src: local("Muller"),
+        url(../fonts/Muller-Trial-Bold.woff) format(woff2),
+        url(../fonts/Muller-Trial-Bold.woff) format(woff);
+    font-weight: 700;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body{
+    font-family: Muller, sans-serif;
+    max-width: 70%;
+    margin: 30px auto;
+    background-color: #E5E5E5;
+}
+
+h2{
+    margin: 0;
+}
+
+a{
+   color: inherit; 
+   text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul{
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+address{
+    font-style: normal;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+}
+
+.section-content{
+    margin-bottom: 30px;
+}
+
+.brand-view, .brand-account, .brand-logo, .nav-list, .nav-item-list, .nav-buttons{
+    display: flex;
+    align-items: center;
+}
+.brand-view{
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.brand-logo{
+    gap: 40px;
+}
+.phone-number{
+    color: #666666;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.my-account-link{
+    color: #CC9933;
+}
+
+.nav-list{
+    height: 70px;
+    background-color: #fff;
+    border-radius: 15px;
+    justify-content: space-between;
+    padding: 0 45px;
+    font-size: 16px;
+}
+.nav-item-list{
+    gap: 45px;
+    color: #666;
+}
+
+.want, .back-call{
+    font-size: 16px;
+    color: #CC9933;
+    border: 1px solid #CC9933;
+    border-radius: 10px;
+    padding: 13px 20px;
+    max-height: 42px;
+    line-height: 14px;
+}
+
+.nav-buttons{
+    gap: 40px;
+}
+.brand-account{
+    gap: 5px;
 }
