@@ -29,8 +29,8 @@
 
 body{
     font-family: Muller, sans-serif;
-    max-width: 60%;
-    margin: 30px auto 30px;
+    max-width: 70%;
+    margin: 30px auto;
     background-color: #E5E5E5;
 }
 
@@ -61,58 +61,57 @@ button{
     background-color: transparent;
 }
 
-.section-content, .main-header{
-    margin-bottom: 70px;
-}
-
-.nav-list, .nav-item-list, .brand-view {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.main-header{
-    height: 154px;
-}
-.brand-view{
-    height: 54px;
+.section-content{
     margin-bottom: 30px;
 }
-.nav-list{
-    height: 70px;
-    background-color: #FFFFFF;
-    border-radius: 15px;
-    padding: 0 45px;
+
+.brand-view, .brand-account, .brand-logo, .nav-list, .nav-item-list, .nav-buttons{
+    display: flex;
+    align-items: center;
+}
+.brand-view{
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.brand-logo{
+    gap: 40px;
 }
 .phone-number{
     color: #666666;
     font-size: 20px;
     font-weight: 500;
 }
+
 .my-account-link{
     color: #CC9933;
 }
 
-.nav-list-item{
+.nav-list{
+    height: 70px;
+    background-color: #fff;
+    border-radius: 15px;
+    justify-content: space-between;
+    padding: 0 45px;
     font-size: 16px;
-    color: #666666;
-    padding-right: 45px;
 }
-.want, .back-call{
-    color: #CC9933;   
-    font-size: 16px;
-    border: 1px solid #CC9933;
-    border-radius: 10px;
-    height: 42px;
-    padding: 13px 20px;
+.nav-item-list{
+    gap: 45px;
+    color: #666;
 }
 
-.brand-logo{
-    display: flex;
-    align-items: center;
+.want, .back-call{
+    font-size: 16px;
+    color: #CC9933;
+    border: 1px solid #CC9933;
+    border-radius: 10px;
+    padding: 13px 20px;
+    max-height: 42px;
+    line-height: 14px;
+}
+
+.nav-buttons{
     gap: 40px;
 }
-.nav-buttons{
-    display: flex;
-    gap: 40px;
+.brand-account{
+    gap: 5px;
 }
