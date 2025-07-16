@@ -29,7 +29,7 @@
 
 body{
     font-family: Muller, sans-serif;
-    max-width: 70%;
+    max-width: 60%;
     margin: 30px auto;
     background-color: #E5E5E5;
 }
@@ -62,7 +62,11 @@ button{
 }
 
 .section-content{
-    margin-bottom: 30px;
+    margin-bottom: 70px;
+}
+
+.main-header{
+    margin-bottom: 70px;
 }
 
 .brand-view, .brand-account, .brand-logo, .nav-list, .nav-item-list, .nav-buttons{
@@ -112,6 +116,188 @@ button{
 .nav-buttons{
     gap: 40px;
 }
+
 .brand-account{
     gap: 5px;
+}
+
+.special-offer-list{
+    display: flex;
+    gap: 24px;
+}
+
+.special-offer-column{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.offer-img{
+    position: relative;
+    height: 258px;
+    width: 573px;
+    border-radius: 15px;
+}
+.offer-item-content{
+    position: absolute;
+    z-index: 2;
+    margin: 28px 45px;
+    max-width: 420px;
+}
+
+.special-offer-list-item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+}
+.special-offer-header{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.special-offer-header-last{
+    font-size: 60px;
+}
+
+.special-offer-price{
+    font-size: 20px;
+    color: #fff;
+}
+
+.special-offer-price-last{
+    font-size: 30px;
+}
+
+.special-offer-link{
+    color: #F0BF5F;
+    font-size: 16px;
+    display: flex;
+    gap: 5px;
+}
+.special-offer-name{
+    font-size: 40px;
+    font-weight: 400;
+    color: #333333;
+    margin-bottom: 20px;
+    text-indent: 45px;
+}
+
+.special-offer-about-us{
+    max-width: 888px;
+    font-size: 16px;
+    line-height: 200%;
+}
+.gradient{
+    height: 258px;
+    width: 573px;
+    position: absolute;
+    background: linear-gradient(90deg, rgba(48,64,89, 0.84) 0%, rgba(53, 65,83, 0) 67%);
+    border-radius: 15px;
+}
+
+.offer-img-last{
+    height: 540px;
+    width: 573px;
+}
+
+/* services */
+.services-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.services-list-item{
+    height: 330px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    flex: 0 0 calc(50% - 12px);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 25px 45px 35px 45px;
+}
+
+.services-list-item:nth-child(1){
+    background-image: url(../images/exclusice-services.jpg);
+}
+.services-list-item:nth-child(2){
+    background-image: url(../images/room-services.jpg);
+}
+.services-list-item:nth-child(3){
+    background-image: url(../images/pool-services.jpg);
+}
+.services-list-item:nth-child(4){
+    background-image: url(../images/car-services.jpg);
+}
+
+.services-items-link{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #CC9933;
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.services-details{
+    margin: 0;
+    font-size: 16px;
+    line-height: 200%;
+}
+
+/* advanteges */
+
+.advanteges-list{
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.advanteges-list-item{
+    flex: 0 0 calc(25% - 16.5px);
+    height: 276px;
+    background-color: #fff;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: end;
+    padding: 30px 25px ;
+    background-position: top 30px left 30px;
+}
+
+.advanteges-list-item:nth-child(1){
+    background-image: url(../images/bathtub.png);
+}
+
+.advanteges-list-item:nth-child(2){
+    background-image: url(../images/hanger.png);
+}
+
+.advanteges-list-item:nth-child(3){
+    background-image: url(../images/heating.png);
+}
+
+.advanteges-list-item:nth-child(4){
+    background-image: url(../images/hotel-key.png);
+}
+.advanteges-list-item:nth-child(5){
+    background-image: url(../images/parking.png);
+}
+.advanteges-list-item:nth-child(6){
+    background-image: url(../images/reception.png);
+}
+.advanteges-list-item:nth-child(7){
+    background-image: url(../images/security-box.png);
+}
+.advanteges-list-item:nth-child(8){
+    background-image: url(../images/swimming-pool.png);
+}
+
+.advanteges-list-item-description{
+    margin: 0;
+    font-size: 16px;
+    line-height: 200%;
+
 }
