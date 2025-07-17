@@ -301,3 +301,144 @@ button{
     line-height: 200%;
 
 }
+
+/* location */
+
+.location-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.location-list-item{
+    height: 440px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    flex: 0 0 calc(33% - 15px);
+}
+
+.location-img{
+    border-radius: 15px 15px 0 0;
+}
+.location-price-line{
+    display: flex;
+    gap: 4px;
+    align-items: baseline;
+}
+
+.loaction-rate{
+    display: flex;
+    gap: 6px;
+    padding-left: 15px;
+}
+
+.location-details{
+    padding: 32px 35px 35px;
+}
+
+.from, .location-drop{
+    color: #999999;
+    font-size: 16px;
+}
+
+.price{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.night{
+    font-size: 16px;
+}
+
+.location-drop{
+    margin-bottom: 20px;
+}
+
+.location-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 42px;
+    color: #CC9933;
+    border: 1px solid #CC9933;
+    border-radius: 10px;
+}
+
+.location-list-item:last-child{
+    background-image: url(../images/location.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    padding: 25px;
+}
+.location-all{
+    display: flex;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 200%;
+    align-items: center;
+    gap: 6px;
+}
+
+/* contact */
+
+.contacts-wrapper{
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 45px;
+    gap: 50px;
+}
+
+.address-title{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.address-list-item{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #E9E9E9;
+    align-items: baseline;
+}
+
+.lagoona-reception-img{
+    max-width: 60%;
+}
+
+.right-block{
+    width: 60%;
+    text-align: start;
+    margin-bottom: 20px;
+}
+
+.phone-list-item, .mail-list-item{
+    line-height: 150%;
+    a{
+        color: #CC9933;
+        font-size: 16px;
+    }
+    p{
+        margin: 0;
+        color: #999999;
+    }
+    text-align: start;
+}
+
+.contact-location{
+    border: 1px solid #CC9933;
+    color: #CC9933;
+    padding: 27px 30px ;
+    border-radius: 15px;
+}
+
+.address-list-item:last-child{
+    border: none;
+    margin-top: 45px;
+}
