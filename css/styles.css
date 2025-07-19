@@ -442,3 +442,80 @@ button{
     border: none;
     margin-top: 45px;
 }
+
+/* footer */
+
+.footer-wrapper{
+    background-color: #333333;
+    height: 341px;
+    border-radius: 15px;
+    background-image: url("../images/lagoona-bg.svg");
+    background-position: right 20% bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    color: #fff;
+    padding: 45px;
+    gap: 100px;
+    font-size: 16px;
+}
+
+.company-reglament{
+    width: 40%;
+}
+
+.company-address{
+    width: 50%;
+}
+
+.company-social-media{
+    width: 10%;
+}
+
+.company-privacy{
+    color: #CC9933;
+    line-height: 150%;
+}
+
+.company-reglament-lagoona{
+    margin: 0;
+    line-height: 190%;
+    padding-bottom: 37px;
+}
+.company-reglament-desclimer{
+    margin: 0;
+    line-height: 190%;
+    padding-bottom: 40px;
+}
+
+.company-address-list-item:not(:first-child){
+    color: #CC9933;
+    line-height: 150%;
+}
+
+.address-link{
+    padding-bottom: 15px;
+    line-height: 30px;
+}
+
+.address-phone-second{
+    padding-bottom: 15px;
+}
+
+.company-address-list{
+    margin: 0;
+}
+
+.company-social-media{
+    margin: 0;
+}
+
+.company-social-media-list-item{
+    text-align: end;
+    padding-bottom: 20px;
+}
+
+.my-account{
+    path{
+        fill: red;
+    }
+}
