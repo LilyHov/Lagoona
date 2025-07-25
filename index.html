@@ -5,8 +5,10 @@
         <title>
             Lagoona Hotel
         </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
     </head>
     <body>
         <header class="main-header">
@@ -16,10 +18,10 @@
                     <a class="phone-number" href="tel:+74953225448">+7 495 322-54-48</a>
                 </div>
                 <div class="brand-account" tabindex="0">
-                    <!-- <svg class="my-account" width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="my-account" width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.59 1.41L14.17 5H0V7H14.17L10.58 10.59L12 12L18 6L12 0L10.59 1.41ZM19 0V12H21V0H19Z" fill="#CC9933"/>
-                    </svg>    -->
-                    <img src="images/keyboard_tab.svg" alt=" " aria-hidden="true"/>                 
+                    </svg>   
+                    <!-- <img src="images/keyboard_tab.svg" alt=" " aria-hidden="true"/>                  -->
                     <a class="my-account-link">Личный кабинет</a>
                  </div>
             </section>
@@ -100,37 +102,45 @@
                 <ul class="services-list">
                     <li class="services-list-item">
                        <div class="services-items-link">
-                            <a href="#">Эксклюзивное обслуживание</a>
-                            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <a href="#" class="service-item-link">
+                                Эксклюзивное обслуживание
+                            <svg width="10" class="test" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0.778175 1.00002L8.55635 8.7782L0.778175 16.5564" stroke="#CC9933" stroke-width="2"/>
                                 </svg>
+                            </a>
                         </div>
                         <p class="services-details">Равным образом постоянный количественный рост и сфера нашей активности</p>                            
                     </li>
                     <li class="services-list-item">      
                         <div class="services-items-link">
-                            <a href="#">Сауны, бассейны, бани, фитнес-залы</a>
+                            <a href="#" class="service-item-link">
+                            Сауны, бассейны, бани, фитнес-залы
                             <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0.778175 1.00002L8.55635 8.7782L0.778175 16.5564" stroke="#CC9933" stroke-width="2"/>
                                 </svg>
+                            </a>
                         </div>
                         <p class="services-details">Не следует, однако забывать, что начало повседневной работы по формированию позиции</p>   
                     </li>
                     <li class="services-list-item">      
                         <div class="services-items-link">
-                            <a href="#">Аренда банкетных залов</a>
+                            <a href="#" class="service-item-link">
+                            Аренда банкетных залов
                             <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0.778175 1.00002L8.55635 8.7782L0.778175 16.5564" stroke="#CC9933" stroke-width="2"/>
                                 </svg>
+                                </a>
                         </div>
                         <p class="services-details">Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм</p>   
                     </li>
                     <li class="services-list-item">      
                         <div class="services-items-link">
-                            <a href="#">Охраняемые автомобильные стоянки</a>
+                            <a href="#" class="service-item-link">
+                                Охраняемые автомобильные стоянки
                             <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.778175 1.00002L8.55635 8.7782L0.778175 16.5564" stroke="#CC9933" stroke-width="2"/>
                             </svg>
+                            </a>
                         </div>
                         <p class="services-details">Не следует, однако забывать, что начало повседневной работы по формированию позиции</p>   
                     </li>
@@ -355,8 +365,51 @@
                     </li>
                 </ul>
             </section>
-            <section id="iWant" class="section-content">
+            <section id="iWant" class="section-content iWant-section">
                 <h2 class="special-offer-name">Хочу тур</h2>
+                <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="form">
+                    <div class="tour-filter">
+                        <ul class="tour-list">
+                            <li class="tour-list-item">
+                                <label class="tour-item-title" for="start">Город вылета</label>
+                                <select id="start" class="tour-start" name="start">
+                                    <option value="Город вылета" disabled selected>
+                                        Город вылета
+                                    </option>
+                                    <option value="Санкт-Петербург">Санкт-Петербург</option>
+                                </select>
+                            </li>
+                            <li class="tour-list-item">
+                                <label class="tour-item-title" for="tour-finish">Страна</label>
+                                <select id="tour-finish" class="tour-finish" name="tour-finish">
+                                    <option value="Страна" disabled selected>
+                                        Страна
+                                    </option>
+                                    <option value="Австралия">Австралия</option>
+                                </select>
+                            </li>
+                            <li class="tour-list-item">
+                                <label class="tour-item-title" for="arrival-date">
+                                    Дата прибытия</label>
+                                <input class="input-date" type="date" id="arrival-date" name="arrival-date"
+                                    value="2021-10-18" min="2021-10-18" max="2022-10-18">
+                            </li>
+                            <li class="tour-list-item">
+                                <label class="tour-item-title" for="nights">Ночей</label>
+                                <input class="night input-tour" type="number" value="2" min="1" max="31" id="nights"
+                                    name="nights">
+                            </li>
+                            <li class="tour-list-item">
+                                <label class="tour-item-title" for="tourists">Туристы</label>
+                                <input class="peaple input-tour" type="number" value="6" min="1" max="8" id="tourists"
+                                    name="tourists" required>
+                            </li>
+                        </ul>
+                        <button class="tour-button">
+                            Найти
+                        </button>
+                    </div>
+                </form>
             </section>
             <section id="contacts" class="section-content">
                 <h2 class="special-offer-name">Контакты</h2>
